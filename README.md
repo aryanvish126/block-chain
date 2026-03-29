@@ -26,14 +26,22 @@ http://localhost:8000
 If Node.js is installed, open a terminal in this folder and run:
 
 ```bash
-npx http-server -p 8000
+npm install
+npm run dev
 ```
 
 Then open:
 
 ```text
-http://localhost:8000
+http://localhost:3000
 ```
+
+## Database support
+
+This project now includes a local database file named `db.json`.
+
+- `POST /api/login` checks the hard-coded user in `db.json`
+- `POST /api/contact` saves messages to `db.json`
 
 ## Share with a link
 
@@ -42,7 +50,7 @@ To make the site available on any device or OS, deploy it as a static website.
 ### GitHub Pages
 
 1. Create a GitHub repository and push this project.
-2. In the repository settings, enable GitHub Pages from the `main` branch.
+2. In the repository settings, enable GitHub Pages from the `main` branch and folder `/ (root)`.
 3. Your site will be available at a link like:
 
 ```text
@@ -57,6 +65,6 @@ https://<your-username>.github.io/<repo-name>/
 
 ## Notes
 
-- All pages use relative links, so they work from any host.
-- The site is static, so it works on Windows, macOS, Linux, Android, and iOS.
-- If you want, I can also help you deploy this project to GitHub Pages step by step.
+- The backend server runs at `http://localhost:3000`.
+- The database file is `db.json` and stores login users plus contact submissions.
+- If you want, I can also help you make the login page fully dynamic with real user registration.

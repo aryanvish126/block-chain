@@ -29,10 +29,10 @@
 </section>
 
 <section class="contact-panel">
-<form class="contact-form">
-<input type="text" placeholder="Name" required>
-<input type="email" placeholder="Email" required>
-<textarea placeholder="Message" rows="6" required></textarea>
+<form id="contact-form" class="contact-form" onsubmit="submitContact(event)">
+<input id="contact-name" type="text" placeholder="Name" required>
+<input id="contact-email" type="email" placeholder="Email" required>
+<textarea id="contact-message" placeholder="Message" rows="6" required></textarea>
 <button type="submit">Send Message</button>
 </form>
 
@@ -48,5 +48,6 @@
 <footer class="site-footer">
 <p>Digital Bharat Chain · We’re here to help you explore blockchain.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
