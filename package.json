@@ -1,0 +1,11 @@
+{
+  "name": "blockchain-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "live-server --port=3000 --host=0.0.0.0 --open=./index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
